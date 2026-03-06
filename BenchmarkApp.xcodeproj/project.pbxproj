@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+        17D05E318D6C4DF9A302F2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE6A5C2B57D4D409ED8B0F5 /* Assets.xcassets */; };
+	6BFC8E6E22D64D2281A668C2 /* BenchmarkComparisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E4AF7A9D74172A766E6B5 /* BenchmarkComparisonView.swift */; };
+		2CF9C3214B8A1835F57C45B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9213302FB23487826D6F71 /* ContentView.swift */; };
+		5CC71593D87EAB68CF9C589F /* BenchmarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6989AF428FCFB6BF8F40A23 /* BenchmarkApp.swift */; };
+		745BA3DF23E7DEC798928C9D /* BenchmarkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8845EB58C27BA1022638B8FA /* BenchmarkModels.swift */; };
+		785423E5F72312BD33FCAEBC /* WindowConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB654F11475A8762CA704F5 /* WindowConfigurator.swift */; };
+		7D3B88FF8B30285479556095 /* BenchmarkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB59677360D18D98B472950 /* BenchmarkEngine.swift */; };
+		E0EB2C2AD65D40AA98C1707A /* SnapshotExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D05BDDD0C77EE3FD2FB4A85 /* SnapshotExporter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2AB654F11475A8762CA704F5 /* WindowConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowConfigurator.swift; sourceTree = "<group>"; };
+		4D05BDDD0C77EE3FD2FB4A85 /* SnapshotExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotExporter.swift; sourceTree = "<group>"; };
+		8AE6A5C2B57D4D409ED8B0F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC8E4AF7A9D74172A766E6B5 /* BenchmarkComparisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkComparisonView.swift; sourceTree = "<group>"; };
+		8845EB58C27BA1022638B8FA /* BenchmarkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkModels.swift; sourceTree = "<group>"; };
+		B6989AF428FCFB6BF8F40A23 /* BenchmarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkApp.swift; sourceTree = "<group>"; };
+		BB9213302FB23487826D6F71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAB59677360D18D98B472950 /* BenchmarkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkEngine.swift; sourceTree = "<group>"; };
+		FF66B5ACD9BD34F3F9940141 /* BenchmarkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BenchmarkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0CCB397A556F53A8910A2C24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF66B5ACD9BD34F3F9940141 /* BenchmarkApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58E50096295B7A50D439174F /* BenchmarkApp */ = {
+			isa = PBXGroup;
+			children = (
+				8AE6A5C2B57D4D409ED8B0F5 /* Assets.xcassets */,
+				B6989AF428FCFB6BF8F40A23 /* BenchmarkApp.swift */,
+				FAB59677360D18D98B472950 /* BenchmarkEngine.swift */,
+				8845EB58C27BA1022638B8FA /* BenchmarkModels.swift */,
+				AC8E4AF7A9D74172A766E6B5 /* BenchmarkComparisonView.swift */,
+				BB9213302FB23487826D6F71 /* ContentView.swift */,
+				4D05BDDD0C77EE3FD2FB4A85 /* SnapshotExporter.swift */,
+				2AB654F11475A8762CA704F5 /* WindowConfigurator.swift */,
+			);
+			path = BenchmarkApp;
+			sourceTree = "<group>";
+		};
+		C0F8CB4D76AD73BE399F6DEA = {
+			isa = PBXGroup;
+			children = (
+				58E50096295B7A50D439174F /* BenchmarkApp */,
+				0CCB397A556F53A8910A2C24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C81A61EB3DD40F0352804F55 /* BenchmarkApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED2A461277853EE475B0FBB /* Build configuration list for PBXNativeTarget "BenchmarkApp" */;
+			buildPhases = (
+				A775D74AB52D913CF28B5944 /* Sources */,
+				1C7487D454C24EF1A2CB22A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BenchmarkApp;
+			packageProductDependencies = (
+			);
+			productName = BenchmarkApp;
+			productReference = FF66B5ACD9BD34F3F9940141 /* BenchmarkApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7438C6BCDE05B3DCB62EB8B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C81A61EB3DD40F0352804F55 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6A837790F5E9D10F4213501A /* Build configuration list for PBXProject "BenchmarkApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C0F8CB4D76AD73BE399F6DEA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 54;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C81A61EB3DD40F0352804F55 /* BenchmarkApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C7487D454C24EF1A2CB22A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17D05E318D6C4DF9A302F2B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A775D74AB52D913CF28B5944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC71593D87EAB68CF9C589F /* BenchmarkApp.swift in Sources */,
+				7D3B88FF8B30285479556095 /* BenchmarkEngine.swift in Sources */,
+				745BA3DF23E7DEC798928C9D /* BenchmarkModels.swift in Sources */,
+				6BFC8E6E22D64D2281A668C2 /* BenchmarkComparisonView.swift in Sources */,
+				2CF9C3214B8A1835F57C45B0 /* ContentView.swift in Sources */,
+				E0EB2C2AD65D40AA98C1707A /* SnapshotExporter.swift in Sources */,
+				785423E5F72312BD33FCAEBC /* WindowConfigurator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		781D2950C1C5148C7DD0A60F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crossdriver.benchmarkapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		78EDFFFFFFFB3D2BFD416527 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Benchmark by CrossDriver";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = "Benchmark by CrossDriver";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		978CF249365CB4DF01D0DD67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Benchmark by CrossDriver";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = "Benchmark by CrossDriver";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C5F152297A97752D816A8852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crossdriver.benchmarkapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A837790F5E9D10F4213501A /* Build configuration list for PBXProject "BenchmarkApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				781D2950C1C5148C7DD0A60F /* Debug */,
+				C5F152297A97752D816A8852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6ED2A461277853EE475B0FBB /* Build configuration list for PBXNativeTarget "BenchmarkApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				978CF249365CB4DF01D0DD67 /* Debug */,
+				78EDFFFFFFFB3D2BFD416527 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7438C6BCDE05B3DCB62EB8B3 /* Project object */;
+}

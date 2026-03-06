@@ -1,0 +1,25 @@
+name: BenchmarkApp
+options:
+  minimumXcodeGenVersion: 2.38.0
+  deploymentTarget:
+    macOS: 13.0
+settings:
+  base:
+    PRODUCT_BUNDLE_IDENTIFIER: com.crossdriver.benchmarkapp
+    SWIFT_VERSION: 5.10
+    MACOSX_DEPLOYMENT_TARGET: 13.0
+targets:
+  BenchmarkApp:
+    type: application
+    platform: macOS
+    sources:
+      - BenchmarkApp
+    settings:
+      base:
+        PRODUCT_NAME: BenchmarkApp
+        INFOPLIST_KEY_CFBundleDisplayName: BenchmarkApp
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.developer-tools
+        INFOPLIST_KEY_NSHumanReadableCopyright: ""
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_STYLE: Automatic
+    dependencies: []
