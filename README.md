@@ -6,9 +6,6 @@ A macOS SwiftUI benchmark app focused on file-system behavior for small-file and
 
 - Detailed usage guide: [USAGE.md](USAGE.md)
 - End-user guide: [USER_GUIDE.md](USER_GUIDE.md)
-- Marketing copy templates: [MARKETING_COPY_TEMPLATE.md](MARKETING_COPY_TEMPLATE.md)
-- 中文用户说明书: [USER_GUIDE_CN.md](USER_GUIDE_CN.md)
-- 中文营销文案模板: [MARKETING_COPY_TEMPLATE_CN.md](MARKETING_COPY_TEMPLATE_CN.md)
 
 ## What it measures
 
