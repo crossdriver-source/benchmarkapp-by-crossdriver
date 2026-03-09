@@ -6,6 +6,7 @@ import Darwin
 final class BenchmarkViewModel: ObservableObject {
     @Published var mountedVolumes: [MountedVolume] = []
     @Published var selectedVolumeID: String = ""
+    @Published var usesCustomFolder: Bool = false
     @Published var rootPath: String = "/tmp/benchmarkapp"
     @Published var isRunning: Bool = false
     @Published var progress: Double = 0
@@ -61,15 +62,16 @@ final class BenchmarkViewModel: ObservableObject {
 
     func pickFolder() {
         let panel = NSOpenPanel()
-        panel.title = "Select Benchmark Root Folder"
+        panel.title = "Select Benchmark Test Folder"
         panel.canChooseFiles = false
         panel.canChooseDirectories = true
         panel.allowsMultipleSelection = false
         panel.canCreateDirectories = true
 
         if panel.runModal() == .OK, let url = panel.url {
+            usesCustomFolder = true
             rootPath = url.path
-            appendLog("Selected folder: \(rootPath)")
+            appendLog("Selected custom test folder: \(rootPath)")
         }
     }
 
@@ -103,12 +105,16 @@ final class BenchmarkViewModel: ObservableObject {
             selectedVolumeID = volumes.first?.id ?? "/"
         }
 
-        applySelectedVolume()
+        if !usesCustomFolder {
+            applySelectedVolume()
+        }
     }
 
     func applySelectedVolume() {
         guard let selected = mountedVolumes.first(where: { $0.id == selectedVolumeID }) else { return }
+        usesCustomFolder = false
         rootPath = URL(fileURLWithPath: selected.mountPath).appendingPathComponent("benchmarkapp-work").path
+        appendLog("Selected volume: \(selected.mountPath)")
     }
 
     func cancel() {
