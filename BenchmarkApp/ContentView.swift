@@ -102,6 +102,14 @@ struct ContentView: View {
                 }
 
                 Button {
+                    vm.pickFolder()
+                } label: {
+                    Label("Test Folder", systemImage: "folder.badge.gearshape")
+                }
+                .buttonStyle(.bordered)
+                .disabled(vm.isRunning)
+
+                Button {
                     vm.refreshMountedVolumes()
                 } label: {
                     Image(systemName: "arrow.clockwise")
@@ -178,7 +186,11 @@ struct ContentView: View {
                 Spacer()
             }
 
-            if let selected = vm.mountedVolumes.first(where: { $0.id == vm.selectedVolumeID }) {
+            if vm.usesCustomFolder {
+                Text("Target Folder: \(vm.rootPath)")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            } else if let selected = vm.mountedVolumes.first(where: { $0.id == vm.selectedVolumeID }) {
                 Text("Target Volume: \(selected.subtitle)")
                     .font(.caption)
                     .foregroundStyle(.secondary)
